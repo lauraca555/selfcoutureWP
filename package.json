@@ -1,0 +1,23 @@
+{
+  "name": "mitema",
+  "version": "2.0.0",
+  "description": "=== mitema ===",
+  "author": "Laura Carazo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sass": "^4.1.0",
+    "jshint": "^2.12.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+.mobil-menu-container {display: none;}
+.menu-button-atelier {display: none;}
+.porte-atelier-mobil {display: none;}
+.list-video-mobil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .item-video-list{width: 100%;}
+   
+}
+.video-vip {padding-bottom: 10px;} 
+@media screen and (max-width: 1050px)
+{
+    
+.porte-atelier-mobil {display: none;flex-direction: column;align-items: center;.widget-area{width: 300px;}}    
+.mobil-menu-container {display: none;flex-direction: column;align-items: center;
+}    
+.atelier-index ul {padding: 0px;} 
+.list-video{display: flex;flex-direction: column;align-items: center;
+    .liste-video {max-width: 400px;}
+}
+
+
+.menu-button-atelier {display: none;/*display: flex;flex-direction: column;align-items: flex-end;*/
+  div{  width: 35px;
+  height: 5px;
+  background-color: grey;
+  margin: 2px 0;}}
+.titre-mobil-menu-container {
+    text-align: center;
+}
+}

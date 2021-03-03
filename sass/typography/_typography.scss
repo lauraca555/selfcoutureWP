@@ -1,0 +1,45 @@
+
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea,
+.comments-area
+
+
+{
+	font-family: $font__normal !important;
+	font-size: 24px !important;
+        font-style: italic !important;
+	line-height: $font__line-height-body !important;
+}
+#site-navigation {
+        font-family: $font__normal !important;
+        font-style: italic !important;
+	font-size: 30px !important;
+        
+
+} 
+
+@media screen and (max-width: 1050px)
+{
+    .comments-area,
+    footer,
+    .widget-area,
+    .content-area,
+    .content-area-page
+        {
+            font-family: $font__normal !important;
+            font-size: 22px !important;
+            font-style: italic !important;
+            }
+  
+}
+ 
+
+@import "headings";
+
+@import "copy";
+

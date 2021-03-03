@@ -1,0 +1,37 @@
+.derniers-ateliers, .derniers-cours {margin-top: 30px;display: grid; align-items: center;
+grid-template-columns: 1fr 1fr 1fr;row-gap: 20px;column-gap: 15px;
+}
+.item-accueil{display: grid; grid-template-columns: 1fr; grid-template-rows: 65% 35%;row-gap: 10px;.accueil-item-title {text-align: center;}
+h3 {margin: 0px;padding-top: 15px;}}
+.maxi-tittre-atelier{ width: 100%;grid-column: 1/4;background-color: #aed9e6;color: #003366;
+h2 {
+    text-align: center;
+    border-top: .1em #fff dashed;
+    border-bottom: .1em #fff dashed;
+    margin: 5px;
+
+}}
+.maxi-tittre-cours {width: 100%;grid-column: 1/4;background-color: #cbdf9e;color: #003366;
+                 
+h2 {
+    text-align: center;
+    border-top: .1em #fff dashed;
+    border-bottom: .1em #fff dashed;
+    margin: 5px;
+
+}}
+.image-accueil-item {align-items: center;} 
+.accueil-item-title{align-items: center;}
+@media screen and (max-width: 1050px){
+    .pub-libre {display: none;}
+    .derniers-ateliers, .derniers-cours {
+        grid-template-columns: 1fr;row-gap: 5px;
+    }
+   .maxi-tittre-atelier,.maxi-tittre-cours {grid-column: 1/2;} 
+   .item-accueil{
+                 display: flex;
+                 flex-direction: column-reverse;
+                    h3 {font-size: 18px;}
+                
+   }
+}

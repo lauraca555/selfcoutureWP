@@ -1,0 +1,20 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets.*/
+	select {
+		max-width: 100%;
+	}
+
+	//pub google div
+	
+}
+/// bloque de publicité extérieur
+.pub-ext {
+margin-bottom: 20px;
+}
+@media screen and (max-width: 1050px){
+	.pub-ext {
+		margin: 15px 0px;
+		}	
+}

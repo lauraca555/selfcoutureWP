@@ -1,0 +1,254 @@
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe
+    {   display: flex;
+        margin: auto;}
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+.supercontainer-accueil
+{
+display: flex;
+justify-content: center;
+.img-container
+{ figure{margin:0px;
+            .locker{border: 5px solid pink; margin: 0px;} 
+            }
+                                                
+                            border: 1px solid #fadbd8;
+                            position: relative;
+                            top:0px;
+                            left: 0px;
+                            width: 300px;
+                            height: 300px;
+                            margin: 0px 10px;
+                                .block-img {    
+                                                display: block;
+                                                position: absolute;
+                                                top: 0px;
+                                                left:0px;
+                                                margin: 0px;
+                                                
+                                            } 
+                                .block-svg  {   
+                                                position: absolute;
+                                                top: 0px;
+                                                left:0px;
+                                                margin:0px;
+                                                padding:0px;
+                                                
+                                                    #couture-svg
+                                                        {
+                                                        opacity:1;
+                                                        fill:#ffffff;
+                                                        fill-opacity:1;
+                                                        fill-rule:evenodd;
+                                                        stroke:#ffffff;
+                                                        stroke-width:1.03187501;
+                                                        stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;
+                                                        stroke-dasharray:4.12749995, 1.03187499;
+                                                        stroke-dashoffset:0;
+                                                        stroke-opacity:1;
+                                                        }
+                                                    #coutureatelier-svg
+                                                    {
+                                                        opacity:1;
+                                                        fill:none;
+                                                        fill-opacity:1;
+                                                        fill-rule:evenodd;
+                                                        stroke:#ffffff;
+                                                        stroke-width:0.80389398;
+                                                        stroke-linecap:butt;
+                                                        stroke-linejoin:miter;
+                                                        stroke-miterlimit:4;
+                                                        stroke-dasharray:3.21557574, 0.80389393;
+                                                        stroke-dashoffset:0;
+                                                        stroke-opacity:1
+                                                    }
+                                                    #fond-svg
+                                                        {
+                                                        fill:#cbdf9e;
+                                                        fill-opacity:1;
+                                                        fill-rule:evenodd;
+                                                        stroke:none;
+                                                        stroke-width:0.74083334;
+                                                        stroke-opacity:1;
+                                                        }
+                                                    #fond-atelier-svg
+                                                    {
+                                                        /*fill:#aed9e6;
+                                                        fill-opacity:1;
+                                                        fill-rule:evenodd;
+                                                        stroke:none;
+                                                        stroke-width:0.80389398;
+                                                        stroke-linecap:butt;
+                                                        stroke-linejoin:miter;
+                                                        stroke-miterlimit:4;
+                                                        stroke-dasharray:none;
+                                                        stroke-opacity:1*/
+                                                        fill:#aed9e6;
+                                                        fill-opacity:1;
+                                                        fill-rule:evenodd;
+                                                        stroke:none;
+                                                        stroke-width:0.74083334;
+                                                        stroke-linecap:butt;
+                                                        stroke-linejoin:miter;
+                                                        stroke-miterlimit:4;
+                                                        stroke-dasharray:none;
+                                                        stroke-opacity:1
+                                                    }  
+                                            }
+                                            
+                                
+                            }
+                }
+    .supercontainer-img-content
+{
+display: flex;
+justify-content: center;
+
+
+.img-container
+{ 
+  
+  figure{margin:0px;
+         display: block;
+         
+            .locker{border: 5px solid pink; margin: 0px;} 
+            }
+                                                
+                            border: 1px solid #fadbd8;
+                            position: relative;
+                            top:0px;
+                            left: 0px;
+                            width: 230px;
+                            height: 230px;
+                            margin: 0px 0px;
+                                .block-img {    
+                                                display: block;
+                                                position: relative;
+                                                top: 0px;
+                                                left:0px;
+                                                margin: 0px;
+                                                
+                                                
+                                                
+                                            } 
+                                .block-svg  {   
+                                                position: absolute;
+                                                top: 0px;
+                                                left:0px;
+                                                margin:0px;
+                                                padding:0px;
+                                                
+                                                    #couture-svg
+                                                        {
+                                                        opacity:1;
+                                                        fill:#ffffff;
+                                                        fill-opacity:1;
+                                                        fill-rule:evenodd;
+                                                        stroke:#ffffff;
+                                                        stroke-width:1.03187501;
+                                                        stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;
+                                                        stroke-dasharray:4.12749995, 1.03187499;
+                                                        stroke-dashoffset:0;
+                                                        stroke-opacity:1;
+                                                        }
+                                                    #coutureatelier-svg
+                                                    {
+                                                        opacity:1;
+                                                        fill:none;
+                                                        fill-opacity:1;
+                                                        fill-rule:evenodd;
+                                                        stroke:#ffffff;
+                                                        stroke-width:0.80389398;
+                                                        stroke-linecap:butt;
+                                                        stroke-linejoin:miter;
+                                                        stroke-miterlimit:4;
+                                                        stroke-dasharray:3.21557574, 0.80389393;
+                                                        stroke-dashoffset:0;
+                                                        stroke-opacity:1
+                                                    }
+                                                   
+                                                    #fond-svg-courscolor
+                                                        {
+                                                        fill:#cbdf9e;
+                                                        fill-opacity:1;
+                                                        fill-rule:evenodd;
+                                                        stroke:none;
+                                                        stroke-width:0.74083334;
+                                                        stroke-opacity:1;
+                                                        }
+                                                    #fond-svg-ateliercolor
+                                                        {
+                                                        fill: #aed9e6;
+                                                        fill-opacity:1;
+                                                        fill-rule:evenodd;
+                                                        stroke:none;
+                                                        stroke-width:0.74083334;
+                                                        stroke-opacity:1;
+                                                        }
+                                                    #fond-svg
+                                                    {
+                                                        
+                                                        fill:#e8c4e5;
+                                                        fill-opacity:1;
+                                                        fill-rule:evenodd;
+                                                        stroke:none;
+                                                        stroke-width:0.74083334;
+                                                        stroke-opacity:1;
+                                                    }  
+                                                    
+                                            }
+                                           
+                                           
+                                .titrecase-svg {
+                                    text-align: center;
+                                    position: relative;
+                                    z-index: 3;
+                                        h2{
+                                            padding: 0px 3px;
+                                            font-size:0.8em !important;
+                                            margin: 1px;               
+                                /*a {display:inline-block; font-size: 1em;}*/}            
+                                }
+                            }
+                }            
+
+  @media screen and (max-width: 1050px){
+      .titrecase-svg{
+        a{color:#0000ff9e;}
+        font-size: 20px;
+        
+        font-style: italic;
+        margin-top: 15px;
+        }
+   }
+    
+
+    
+
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+@import "captions";
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+@import "galleries";

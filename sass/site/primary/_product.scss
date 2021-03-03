@@ -1,0 +1,123 @@
+.edd_cr_message{text-align: center;}
+
+.edd_download_title{display:none}
+#product-content {
+    
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+   a.edd-submit.button.blue {margin-bottom: 5px;}
+    
+}
+.content-area-boutique{width:100%;}
+
+.content-clearfix {
+   
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 30px;
+    .item-edd-tables { border-radius: 15px;
+            
+            width:300px;
+              
+              .title{
+                        text-align: center;
+                        width: 80%;
+                       }
+                    .product-image
+                    {padding:10px;
+                    margin:15px;
+                    height:251px;
+                    display:block;
+                    display:flex;
+                    align-items:  center;
+                    justify-content: center;
+                    flex-direction: column;
+                    img{border-radius: 15px;margin-top:15px;}
+                    }
+    
+                .product-price 
+                    {
+                        text-align: center;margin-top: 5px;span {font-size:30px;} .taille-prix{font-size:24px;}
+                    }
+                .edd_purchase_submit_wrapper
+                    {
+                    text-align: center;
+                    
+                    }
+                .detail-produit
+                    {
+                    text-align: center;
+                    margin-bottom: 15px;
+                    }
+                  
+                 .product-buttons 
+                 {  div{padding: 5px;}
+                     h4{font-size:19px; margin: 0px;}
+                     text-align: center; }
+                 #edd-purchase-button, .edd-submit, [type="submit"].edd-submit{white-space: normal;font-size:18px;margin: 10px;}
+          }
+                } 
+
+                                   
+.edd_download_inner {   border-radius: 15px;
+                        background-color: white;
+                        margin: 10px;
+                        padding: 5px;
+                        display:grid;
+                        grid-template-rows: 1fr;
+                        grid-template-columns: 1fr ;
+                        align-items: center; justify-items:center;
+                        
+                      
+                        .edd_download_title
+                        {     margin: 0px 0px 5px 0px; padding: 0px;
+                            a { width: 100%;display: inline-block;text-align: center;  white-space: normal;}
+                        }
+                        .edd_download_image{margin:10px;}
+                        .edd_download_buy_button  {p{margin:0px;}} 
+                        .edd-submit.button.blue, .edd-free-downloads-direct-download-link button blue edd-submit { white-space:normal; font-size:18px;margin: 10px;}
+                        
+                        
+                    }                
+ #deja-commande  
+                        {   
+                            color: red;
+                            background-color: #ffffff99;
+                            text-align: center;
+                            display:block;
+                            margin: 10px;
+                            border-radius:10px;
+                            #deja-commande-fond {.deja-non-red {color:black;}; }
+                        }  
+.tittre-ebook-pub a{margin-top: 10px;width: 100%;display: inline-block;text-align: center;}
+//// table-boutique
+.table-boutique {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:30px;
+    align-items: center;
+    .produit-boutique-6272 {grid-column: 1/4;}
+        .tittre-patron{
+            display: flex;
+            justify-content: center;
+            padding-bottom:  20px;
+        }
+        .bouton-patron {padding: 20px;}
+}
+@media screen and (max-width: 1050px)
+{
+    .content-clearfix {grid-template-columns: 1fr;}
+    .table-boutique {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+     .produit-boutique{ width: 100%;}
+     .produit-boutique-6272 {grid-column: 1/2;}
+        .tittre-patron{
+            display: flex;
+          
+            justify-content: center;
+        }
+}
+}

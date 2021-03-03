@@ -1,0 +1,1 @@
+const pero = () => {console.log('pepino')};

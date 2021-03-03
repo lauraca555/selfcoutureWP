@@ -1,0 +1,50 @@
+ul, ol {
+	margin: 0 ;
+        
+}
+
+ul {
+	/*list-style: none;*/
+        padding-left: 40px;
+        h2 {margin-top: 0px}
+        
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+        
+        
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+@media screen and (max-width: 1050px){
+    
+    
+    ul, ol,.liste-aside{.list-video ul{padding-left:0px;}
+        
+        .widget-area{
+                 
+                 list-style-type: none;
+                 li:before {
+                 content: "\2022";
+                 padding-right: 5px;
+                 color:#6699FF;
+                            }
+                    }       
+      }
+        
+    
+    
+}

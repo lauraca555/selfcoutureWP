@@ -1,0 +1,131 @@
+//demande de conection dans la page profil
+#edd_user_history{
+        font-family: $font__normal;font-size:24px;
+       
+    }
+#demande-conection 
+    {
+        width: 90%;
+        text-align: center; 
+        border-radius: 5px;
+        color: #333;
+        background: #ffffe0;
+        padding:10px 20px;
+        border: 1px solid #e6db55;
+        margin: 20px 0px; 
+        p
+            {
+                padding:0px;
+                margin:0px;}
+    }
+ ////   
+    
+    #edd_checkout_wrap {
+        .edd_empty_cart{
+        display:block;text-align: center;
+        #container-identification{
+                display: flex;
+                flex-direction:row;
+                justify-content: center;
+                            }}
+        #edd_checkout_cart_form{th {background-color: #fff9e2ff;}}
+        #edd_checkout_form_wrap{
+            
+        }
+        
+    }
+         
+    .edd_purchase_submit_wrapper
+    { display: flex;
+      justify-content: center;
+      
+         a
+         {font-size:20px; 
+          
+         }
+    }
+    
+    #edd_purchase_form {
+        #edd-purchase-button{font-size:24px;}
+    }
+
+    .identification #demande-user-conection
+        {
+            text-align: center; 
+            background-color: #fbd2cd; 
+            border:1px solid #e66955;
+        }
+    
+    ///page login avec [edd_login]
+    #container-identification
+        {
+        display: flex;
+        flex-direction:row;
+        }
+    ///    
+ .edd-logged-out{display:none;}
+p.edd-logged-in{text-align:center;width:100%;}
+
+    code{ white-space: normal;display: flex; justify-content: center;} 
+    fieldset
+        {.edd-login-username,.edd-login-password,.edd-login-remember,.edd-login-submit{ padding-bottom: 20px;}}
+    .edd-logged-in, #edd_login_form,.edd_form{font-family: $font__normal;font-size:24px;} 
+    .edd-submit{font-family: $font__normal;font-size:24px;}
+  
+                
+ .edd_form {div { padding-bottom: 20px;}}
+
+ 
+ #menu-compte
+    {
+        #lien-mon-compte 
+        {
+            list-style: none;
+            padding:0px;
+            li 
+            {
+                text-align: center;
+                margin: 30px 0px; 
+                background-color: #aed9e6ff;
+                border-radius: 10px;
+                a 
+                {
+                    color:#003366ff;
+                    display:block;padding:20px;
+                }
+            }
+        }
+    }
+    
+ .content-area-compte
+    {
+        width:70%;}
+ .site-main-compte
+    {
+        width:100%;
+        padding:0px 60px;
+    }
+    
+  #container-login, #container-register
+  {
+      input {font-size:24px;}
+  }
+  .edd-add-to-cart-label{display:block;}
+ @media screen and (max-width: 1050px){
+   #menu-compte{ul{padding:0px;}}
+     .content-area-compte{width:100%;}.site-main-compte{width:100%;padding:0px 2px;}
+    code{ flex-direction: column;}
+   
+    #container-identification {margin-top:20px;text-align: center;flex-direction: column;legend{margin-bottom: 0px;width:100%;}}
+    #edd_checkout_wrap #edd_checkout_cart_form{font-size:18px;}
+    
+   
+    #demande-conection {font-size: 22px;width: 100%;margin:0px;}
+    
+    #edd_user_history
+    {
+        font-size:18px;
+        
+    }
+    
+}

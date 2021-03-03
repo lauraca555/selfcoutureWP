@@ -1,0 +1,97 @@
+/*
+css for ebook-couture page
+*/
+
+.ebook-primary {width: 100%;
+.entry-header{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+       
+        #entry-image {
+            background-image: url(https://www.self-couture.com/wp-content/themes/mitema/images/raw/livre-couture-mode-emploi-selfcouture2.jpg);
+            
+		height:300px;
+		background-position: center center;
+		background-repeat: no-repeat;
+                margin:0px;
+                
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 450px 450px;
+                justify-content: center;
+                
+                .edd_download_purchase_form{
+                    grid-column: 2/3;display:flex;
+                    grid-row:2/3;
+                    flex-direction: column;
+                    align-items: flex-end;}
+                #deja-commande{
+                               grid-row: 2/3;
+                               grid-column: 2/3;
+                               justify-content: center;
+                               margin:10px;                              
+                                }
+                .edd_purchase_submit_wrapper{padding: 30px;}
+                }
+    }    
+#ebook-content {
+    
+    
+    .resume-book{
+        color: #06f;
+        font-size: 28px;}
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 100%;
+    text-align:center;
+       /* header    {
+            display: grid;
+            justify-content: center;
+       }*/
+        #presentation    {
+            .diff-button{display: none;}
+            figure {width: 100%;}
+           
+            display: grid;
+            justify-content: center;}
+        #presentation-fiches    {
+            display: grid;
+            justify-content: center;}
+        #ebook-grandir    {
+            display: grid;
+            justify-content: center;}
+        #consultation    {
+            display: grid;
+            justify-content: center;}
+        #presition    {
+            display: grid;
+            justify-content: center;}
+        #contribution-ebook    {
+            display: grid;
+            justify-content: center;}
+        
+}
+}
+
+@media screen and (max-width: 1050px)
+{
+    
+   
+    .site-main-book #tittre-ebook #entry-image {
+     grid-template-columns: 1fr;
+     align-items:center;
+     height: 180px;
+     width: 100%;
+     
+ #deja-commande{min-width: 280px;grid-column: 1/2; grid-row:2/3;}
+ .edd_download_purchase_form{min-width: 280px;
+                    grid-column: 1/2;grid-row:2/3;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: flex-end;}
+ }   
+}

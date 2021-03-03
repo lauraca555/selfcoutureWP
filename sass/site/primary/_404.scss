@@ -1,0 +1,78 @@
+/*
+page d'erreur 404 */
+ 
+.page-content 
+    {   
+    text-align: center;.page-header
+    
+{
+    
+    
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+.page-title{ 
+    
+            background-color: #df9ea1;
+            display: flex;
+            margin:0px;
+            width: 100%;
+            padding: 3px;
+            width: fit-content;
+            
+                .container-h1
+                {
+                    display: flex;   
+                    text-align: center;
+                    border-top:0.1em white dashed;
+                    border-bottom: 0.1em white dashed;
+                    margin: 1px 3px;
+                    padding: 0px 20px;
+                    
+                }
+          
+            }           
+}  
+
+    
+    
+.search404
+{
+    display: flex;
+    justify-content: center;
+
+     
+.search-form 
+    {  width: 300px;
+       
+        
+        
+             
+        label
+           {    
+                margin-right: 20px;
+            }
+        button, input[type="button"], input[type="reset"], input[type="submit"]
+            {   
+                font-size: 0.8em;
+                
+            }
+        input
+            {       
+                    margin: 10px 0px;
+                    text-align:center;
+                    width:300px;
+            }
+    }
+}    
+
+    }
+
+@media screen and (max-width: 1050px)
+{
+   
+      
+    
+}

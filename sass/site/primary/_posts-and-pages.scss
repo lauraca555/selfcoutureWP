@@ -1,0 +1,108 @@
+
+.page-header
+{
+    
+    
+    text-transform: uppercase;
+    font-family: $font__normal;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+      
+
+ .page-title  
+ {background-color: #e8c4e5;}   
+ .page-title-cours  
+ {background-color: #cbdf9e;}  
+ .page-title-atelier   
+ {background-color: #aed9e6;}  
+
+        
+.page-title, .page-title-cours, .page-title-atelier { 
+    
+            
+            display: flex;
+            
+           
+            padding: 3px;
+            width: fit-content;
+            
+                .container-h1
+                {
+                    display: flex;   
+                    text-align: center;
+                    border-top:0.1em white dashed;
+                    border-bottom: 0.1em white dashed;
+                    margin: 1px 3px;
+                    padding: 0px 20px;
+                    
+                }
+          
+            }           
+}                                      
+        .entry-title
+            {
+            margin-top: 20px;    
+            text-align: center;
+            }
+
+
+       
+       
+
+
+  
+
+.sticky {
+	display: block;
+        
+}
+
+
+
+.hentry {
+	/*margin: 0 0 1.5em;*/
+}
+
+
+
+        
+
+.updated:not(.published) {
+	display: none;
+}
+
+
+
+
+           
+            
+
+            
+
+
+
+
+.attachment-mitema-small-size size-mitema-small-size wp-post-image
+{
+    
+        
+}
+
+
+.page-links {
+	clear: both;
+	margin: 0 ;
+}
+
+ figcaption{
+    font-size: 0.7em;
+    color: gray;
+    text-align: center;
+}
+
+@media screen and (max-width: 1050px){
+    
+    
+    
+}

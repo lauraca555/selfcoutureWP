@@ -1,0 +1,164 @@
+
+
+.site-content{  
+    padding: 0px 40px 0px 40px;
+    margin: auto  ; 
+    display: flex;
+    flex-direction: row;
+    
+    #secondary-1, #secondary-2,#secondary-ateliers-left{
+        width: 20%; padding: 0px 0px;  
+    }
+    .content-area{
+        width: 60%;    
+        .site-main{  
+            padding: 0px 40px;
+            .acces-ateliers-premium #archive-footer #lire-suite{
+                background-color: #ffb380ff;border-color: #ffb380ff;
+            }
+            .acces-atelier-libre #archive-footer #lire-suite{
+                background-color: #fff9e2ff;border-color: #ffb380ff;
+            }
+            .acces-cours-premium #archive-footer #lire-suite{
+                background-color: #ffb380ff;border-color: #ff9955ff;
+            }
+            .acces-cours-libre #archive-footer #lire-suite{
+                background-color: #fff9e2ff;border-color: #ffb380ff;
+            }
+            .entry-content{
+                width: 100%;
+                margin-bottom:  30px;
+                #container-item-content{   
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    grid-template-rows: 2fr 1fr;
+                    align-items:  center;
+                    width: 100%;
+                        #image-entry-content{  
+                            padding-top:10px;
+                            grid-row: 1/-1;
+                            align-self:start;
+                               #image-article{
+                                   img{
+                                        display: inline-block;
+                                        margin: 0px;
+                                        padding: 0px
+                                    }
+                                }
+                        }
+                        #excerpt-entry-content{
+                            overflow:auto;
+                            p{
+                                padding-left: 20px;
+                                display:flex;
+                                justify-content: space-around;
+                                width: 100%;
+                                margin:0px;
+                                font-size: 0.9em;
+                            }
+                        }
+                        #archive-footer{ 
+                            justify-self:end;
+                                #lire-suite{
+                                    width:250px;
+                                    padding: 15px; 
+                                    border-style: solid;
+                                    border-width: 2px;
+                                    border-radius: 5px;
+                                    text-align:center;
+                                        a {
+                                            font-size: 26px;
+                                        }
+                                }
+                        }    
+                        
+                }   /*container-item
+                             extructure des articles*/
+                .entry-footer{
+                    margin-top: 20px;
+                }
+            }/*entry-content */
+        }/*site-main*/
+    }/*content-area*/   
+}
+.site-footer {
+    clear: both;
+	width: 100%;  
+}
+
+@media screen and (max-width: 1050px){  
+    .site-content{
+       padding-top: 0px; 
+       display: grid;
+       padding: 10px 10px;
+       align-items: center;
+       grid-column: 1/2;
+       grid-template-columns:100%;
+       width: 100%;
+        #primary{
+            grid-row: 2/3;
+            margin-top: 10px;
+        }
+        #secondary-1 {
+           grid-row: 1/2;
+        }
+        #secondary-2 {
+            grid-row: 3/4;
+                #pdf-aside{
+                    display:none;
+                }
+            margin-top: 0px;
+                .widget-container-right,.widget-container-left{
+                    margin-top: 0px
+                }
+        }    
+        #secondary-1, #secondary-2,#secondary-ateliers-left{
+            width: 100%;
+        }
+        .content-area-full,.content-area{
+            width: 100%;
+                .site-main{ 
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 0px;
+                    .entry-content{
+                        width: 100%;
+                        margin-bottom:  0px;
+                        #container-item-content{   
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: 100%;
+                                #image-entry-content{
+                                    width: 100%;
+                                    padding: 0px;
+                                    #image-article{
+                                        width: 100%;
+                                        display:flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        img {
+                                            display: block;
+                                            width: auto;
+                                            margin: 0px;
+                                            padding: 0px;
+                                            }
+                                    }
+                                }
+                                #excerpt-entry-content{
+                                    display: none;
+                                }
+                                #archive-footer{
+                                    display: none;
+                                } 
+                        }
+                    } 
+                    #separateur-entry-content{
+                        display: none;
+                    }
+                }
+        }
+    }
+}
+

@@ -1,0 +1,114 @@
+#secondary-1 {margin-top:40px}
+
+.widget-area
+    {
+    
+    padding: 2px;   
+    overflow: hidden;
+    background-color:     #eaf2f8 ;
+    border-radius: 10px;
+   
+    height: auto;
+     h2 
+                {
+                    margin-top:0px; 
+                    text-align: center;}  
+                    width: 100%;
+            ul {padding-bottom: 20px;
+                padding-left: 0px;
+                list-style-type: none;
+                li:before 
+                      {
+                      content: "\2022";
+                      padding-right: 5px;
+                      color:#6699FF;
+                      }
+                  }
+  
+    
+    .decoration-widtget-area
+    {
+        padding: 10px;
+    border: 0.1em #6699FF  dashed;
+    margin: 5px; 
+    border-radius: 10px;
+     font-size: 22px;h2{font-size: 22px;} 
+     .a-venir {text-align: center; margin: 5px 10px;}  
+    }
+   
+    ul {
+        background: transparent;
+        margin: 0px;
+        
+        
+    }
+    li{
+        padding-left: 10px;a{text-align: center;}
+       
+        
+    }
+    .cible-ateliers h2 {margin:0px;}
+    h2{
+        text-align: center;
+        margin-bottom: 5px;
+        
+       
+        
+    }
+    .widget_search{
+        input{
+            width: 80%;
+            font-size: 0.8em;
+            margin-bottom: 5px;
+            padding-top: 5px;
+           text-align:  center;
+            
+        }
+        button{
+            width: 80%;
+        }
+       
+    }
+    
+  
+.widget-title
+        {  
+           color:  #6699FF ;
+        }
+   
+    
+    }
+    /*@media screen and (max-width: 1050px)
+    {   
+        .widget-area
+        {text-align: center;
+         
+        }
+    }*/
+   @media screen and (max-width: 1050px){
+       #secondary-1 {margin-top:0px; display: flex; justify-content: center; }
+      .widget-container-right
+          {
+           
+          position: initial;
+          top: 0px;
+          margin: 0px;
+          padding: 0px;
+          /*width: 100%;*/
+          display: flex;
+          align-items: center;
+          
+          .costomaside {
+                align-items: center;
+                justify-content: center;
+                        }
+          
+            .widget-area
+             {  
+                text-align: center; }
+          }
+      .widget-container {ul li{display:flex;flex-direction: row;justify-content: center;padding-right: 10px;}}    
+      #archive-footer{padding-top: 10px;}
+}
+
+
