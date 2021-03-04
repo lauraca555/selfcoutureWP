@@ -99,8 +99,8 @@ if ( ! function_exists( 'mitema_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'mitema' ),
-                        'menu-2' => esc_html__( 'Footer', 'mitema' ),
-                        'menu-3' => esc_html__( 'costumaside', 'mitema' ),
+            'menu-2' => esc_html__( 'Footer', 'mitema' ),
+            'menu-3' => esc_html__( 'costumaside', 'mitema' ),
                     
 		) );
                 
@@ -188,22 +188,17 @@ add_action( 'widgets_init', 'mitema_widgets_init' );
  */
 function mitema_scripts() {
     
-        wp_enqueue_style('mitema-fonts',"https://fonts.googleapis.com/css?family=Cormorant+Garamond:400i|Playfair+Display:400i,700,700i");
-    
+       
 	wp_enqueue_style( 'mitema-style', get_stylesheet_uri() );
 	
-	wp_enqueue_script( 'mitema-js-min', get_template_directory_uri() . '/build/all.js', array(), true );
-    wp_enqueue_script('jquery');
+	wp_enqueue_script( 'mitema-all', get_template_directory_uri() .'/build/all.js', false, NULL, false);
+        
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'mitema_scripts' );
+add_action( 'wp_enqueue_scripts','mitema_scripts');
 
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -215,18 +210,7 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
 
-
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
 
 /** 
  * Load self-couture's logo 

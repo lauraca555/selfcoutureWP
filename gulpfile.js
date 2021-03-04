@@ -4,7 +4,10 @@ const babel= require('gulp-babel');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
+const sourcemaps = require('gulp-sourcemaps');
+const plumber = require('gulp-plumber');
+
+
 
 
 async function clean(cb){
@@ -29,7 +32,9 @@ function css(cb){
 
 
 function js(cb){
-    src('./js/**/*.js')
+    
+    src(['./js/**/*.js','./node_modules/bootstrap/dist/js/bootstrap.js', './node_modules/@popperjs/core/dist/umd/popper.js'])
+    .pipe(plumber())
     .pipe(babel({
         presets: ['@babel/env']
     }))
