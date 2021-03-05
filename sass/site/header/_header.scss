@@ -8,11 +8,17 @@
 }                                  
 .mitema-navbar-primary{
     background-color: $color__navigation; 
-    border-top: .1em #fff dashed;
-    border-bottom: .1em #fff dashed; 
+    border-top: .1em white dashed;
+    border-bottom: .1em white dashed; 
     display:flex;
     flex-direction: column; 
     align-items: center;
+            button {
+            margin: 10px;
+            align-self: end;
+            border:2px solid white !important;           
+            
+        }
     
     #primary-menu{
         
@@ -24,7 +30,7 @@
         
             .menu-item{
                 list-style: none;
-                margin: 0px 10px;
+                margin: 0px 20px;
                 height: 100%;
                 a {
                        

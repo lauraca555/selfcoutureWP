@@ -1,13 +1,9 @@
 <?php
 get_header();
 ?>
-<aside id="secondary-1" >
-
-<?php
-get_sidebar('sidebar'); 
-?>
-    
-</aside> 
+	<aside id="secondary-1" >
+		<?php get_sidebar('sidebar');?>
+    </aside> 
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -17,8 +13,6 @@ get_sidebar('sidebar');
 			the_post();
 
 			get_template_part( 'template-parts/content', get_post_type() );
-                          
-			
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :

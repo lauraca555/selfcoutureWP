@@ -1,4 +1,9 @@
-
+.single-card
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 .page-header
 {
     
@@ -40,10 +45,11 @@
           
             }           
 }                                      
-        .entry-title
-            {
-            margin-top: 20px;    
+        .entry-title 
+            { 
             text-align: center;
+            font-size: 1.5em;
+
             }
 
 
@@ -60,9 +66,7 @@
 
 
 
-.hentry {
-	/*margin: 0 0 1.5em;*/
-}
+
 
 
 
@@ -83,11 +87,7 @@
 
 
 
-.attachment-mitema-small-size size-mitema-small-size wp-post-image
-{
-    
-        
-}
+
 
 
 .page-links {

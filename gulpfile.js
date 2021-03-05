@@ -6,6 +6,7 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
+const reload = browserSync.reload;
 
 
 
@@ -43,15 +44,14 @@ function js(cb){
     cb();
 }
 
-function server(cb){
+
+
+async function server(cb){
     browserSync.init(
         
         {
-        notify: false,
-        open: false,
-        proxy: "localhost/wordpress"
-
-        
+        //open: false,
+        proxy:"localhost/wordpress" 
         });
     cb();
 }
@@ -59,7 +59,9 @@ function server(cb){
 function watcher(cb){
     watch('./js/**/*.js').on('change',series(js, css));
     watch('./sass/**/*.scss').on('change',series(js, css));
+    watch("./style.css").on('change', browserSync.reload);
     cb();
 }
+
 
 exports.default = series(clean, parallel(js,css), watcher, server);

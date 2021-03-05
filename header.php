@@ -47,7 +47,7 @@
             </div><?php //global-navigation ?>      
           </div><!-- #header-content --> 
           <!--navigation bootstrap-->
-          <nav class="navbar navbar-expand-lg navbar-light  mitema-navbar-top">
+          <nav class="navbar navbar-expand-lg navbar-dark  mitema-navbar-top">
                         <div class="container-fluid mitema-navbar-primary py-1">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -56,6 +56,8 @@
                                 <?php wp_nav_menu( array(
                                     'theme_location' => 'menu-1',
                                     'menu_id'=> 'primary-menu',
+                                    'menu_class'=> 'navbar-nav',
+                                    
                                     ) );
                             ?>
                             
