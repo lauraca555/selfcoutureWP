@@ -94,3 +94,10 @@
     color: gray;
     text-align: center;
 }
+
+@media screen and (max-width: 992px){
+.separateur-entry-content
+{
+    margin-left: 0px;    
+}
+}

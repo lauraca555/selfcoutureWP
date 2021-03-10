@@ -4,7 +4,7 @@ get_header();
 <div class="row mx-2">
 	   
 
-	<div id="primary" class="content-area col-9 d-flex justify-content-end">
+	<div id="primary" class="content-area col-12 col-md-9 d-flex  justify-content-center justify-content-md-end">
 		<main id="main" class="d-flex flex-column">
 
 		<?php
@@ -42,7 +42,7 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<aside id="secondary-2" class="widget-container-left col-3">        
+<aside id="secondary-2" class="widget-container-left d-none d-md-inline-block col">        
 <?php get_sidebar('sidebar-2');?>         
 
 </aside></div><?php

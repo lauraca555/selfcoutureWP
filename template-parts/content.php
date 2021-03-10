@@ -36,25 +36,30 @@
                         } 
             else {?>   
                     
-                        <div class="card-mitema row m-0 p-0">
-                            <div class="col-3 container-fluid d-flex m-0 p-0 justify-content-end">
-                                <div class="container-image-card" >
+                        <div class="card-mitema d-flex flex-column flex-lg-row m-0 p-0">
+                            <div class="d-inline-block d-lg-none ">
+                                <?php the_title('<h2 class="entry-title mb-3"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+                            </div>
+                            <div class="col-12 col-lg-3 container-fluid d-flex m-0 p-0 justify-content-center justify-content-lg-end">
+                                <div class="container-image-card " >
                                    <?php the_post_thumbnail("mitema-small-size"); ?>
                                 </div>                                        
                             </div>
-                            <div class="col-9 ps-4">
+                            <div class="col-12 col-lg-9 ps-lg-4 d-none d-lg-inline-block ">
                                 <div >
                                     <?php the_title('<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
                                 </div>
-                                <div class="excerpt-card ml-5">
+                                <div class="excerpt-card ml-5 mt-3">
                                     <?php  the_excerpt(); ?>
-                                </div> 
+                                </div>                                 
                             </div>
-                            <div class="entry-footer my-3">
-                                <div class="separateur-entry-content">
-                                <?php mitema_ciseaux()?>
-                                </div>
-                            </div> 
+                        </div> 
+                        <div class="entry-footer my-3">
+                            <div class="separateur-entry-content">
+                            <?php mitema_ciseaux()?>
+                            </div>
+                        </div>   
+                             
                     
                 
                     
