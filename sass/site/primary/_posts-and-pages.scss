@@ -3,6 +3,11 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    
+}
+.separateur-entry-content
+{
+    margin-left: $squareIMG;    
 }
 .page-header
 {
@@ -53,17 +58,6 @@
             }
 
 
-       
-       
-
-
-  
-
-.sticky {
-	display: block;
-        
-}
-
 
 
 
@@ -99,10 +93,4 @@
     font-size: 0.7em;
     color: gray;
     text-align: center;
-}
-
-@media screen and (max-width: 1050px){
-    
-    
-    
 }

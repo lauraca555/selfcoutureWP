@@ -9,16 +9,15 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('post-mitema'); ?>>
 	<header class="entry-header">
-          
-		<?php
+        <?php
 		if ( is_singular() ) : 
 			the_title( '<h1 class="entry-title">', '</h1>' );
-                        mitema_metainfo();
+                mitema_metainfo();
         endif;
         ?>
-	</header><!-- .entry-header -->
+	</header>
     <div class="entry-content">
         <?php
             if ( is_single()){
@@ -35,31 +34,30 @@
                     get_the_title()
                 ) );
                         } 
-            else {?>
-                <div class="container-fluid">        
-                    <div class="card" >
-                        <div class="row m-0 p-0 bg success">
-                            <div class="col-4 container-fluid d-flex justify-content-left">
-                                <div class=" d-block single-card img-fluid" >
-                                    <?php the_post_thumbnail("mitema-small-size"); ?>
+            else {?>   
+                    
+                        <div class="card-mitema row m-0 p-0">
+                            <div class="col-3 container-fluid d-flex m-0 p-0 justify-content-end">
+                                <div class="container-image-card" >
+                                   <?php the_post_thumbnail("mitema-small-size"); ?>
                                 </div>                                        
                             </div>
-                            <div class="col-8  my-3">
-                                <div>
+                            <div class="col-9 ps-4">
+                                <div >
                                     <?php the_title('<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
                                 </div>
-                                <div class="card-text">
+                                <div class="excerpt-card ml-5">
                                     <?php  the_excerpt(); ?>
                                 </div> 
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <footer class="entry-footer">
-                    <div id="separateur-entry-content">
-                        <?php mitema_ciseaux()?>
-                    </div>
-                </footer>     
+                            <div class="entry-footer my-3">
+                                <div class="separateur-entry-content">
+                                <?php mitema_ciseaux()?>
+                                </div>
+                            </div> 
+                    
+                
+                    
             <?php } ?>
     </div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

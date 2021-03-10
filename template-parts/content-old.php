@@ -65,7 +65,7 @@
             </div> <!-- archive-footer -->
         </div><!--container-item-content-->
             <footer class="entry-footer">
-                <div id="separateur-entry-content">
+                <div class="separateur-entry-content">
                     <?php mitema_ciseaux()?>
                 </div> 
             </footer> <!-- .entry-footer -->
