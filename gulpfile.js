@@ -6,6 +6,8 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
+
+
 const reload = browserSync.reload;
 
 
@@ -22,11 +24,13 @@ function css(cb){
     
     src('./sass/style.scss')
     .pipe(sourcemaps.init())
+    
     .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write())
     .pipe(sass({
         outputStyle: 'compressed'
     }))
+    
+    .pipe(sourcemaps.write())
     .pipe(dest('./'));
     cb();
 }

@@ -12,7 +12,14 @@
 @media screen and (max-width: 1050px)
 {
     
-.porte-atelier-mobil {display: none;flex-direction: column;align-items: center;.widget-area{width: 300px;}}    
+.porte-atelier-mobil {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    .widget-area{
+        width: 300px;
+    }
+}    
 .mobil-menu-container {display: none;flex-direction: column;align-items: center;
 }    
 .atelier-index ul {padding: 0px;} 

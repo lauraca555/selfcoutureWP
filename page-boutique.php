@@ -51,7 +51,7 @@ get_header();
                 wp_reset_postdata(); 
                 ///les patrons
                 $query2= array('post_type'=> 'download', 
-                                'post__in'=> array('14929','13069','11908','9720','13330','14697'));
+                                'post__in'=> array('17334','14929','13069','11908','9720','13330','14697'));
                 $my_query2 = new WP_Query($query2);
                 if($my_query2->have_posts()) : 
                     while ($my_query2->have_posts() ) : 

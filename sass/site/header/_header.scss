@@ -1,51 +1,48 @@
  .mitema-navbar-top{
     background-color: $color__navigation !important;   
     margin-bottom: 20px;
-    .navbar-light .navbar-toggler{
-        color: $color__selfcouture-lila !important;
-        
-    }
-}                                  
+}
+
+
 .mitema-navbar-primary{
-    background-color: $color__navigation; 
     border-top: .1em white dashed;
     border-bottom: .1em white dashed; 
     display:flex;
     flex-direction: column; 
-    align-items: center;
-            button {
-            margin: 10px;
+        button {
+            margin: 5px;
             align-self: end;
-            border:2px solid white !important;           
-            
-        }
-    
-    #primary-menu{
-        
-        display: flex;
-        padding-left: 0 !important;
-          
-        margin-bottom: 0;   
-        
-        
-            .menu-item{
-                list-style: none;
-                margin: 0px 20px;
-                height: 100%;
-                a {
-                       
-                    color: #69f;
-                    font-size: 1.1em;
-                    text-decoration: none !important;
-                    
-                    &:active, &:focus, &:hover{
-                        color: #036;
-                    }
+            border:2px solid white !important;
+            padding: 0px 4px;
+            display: flex;
+                .navbar-toggler-icon{
+                    width: 1.2em !important;
+                    height: 1.2em !important;  
+                    display: inline-block;                               
                 }
-                
-            }
-    }  
+        }            
+        #primary-menu{
+            display: flex;
+            padding-left: 0 !important;
+            margin-bottom: 0;
+                .menu-item{
+                    list-style: none;
+                    margin: 0px 20px;
+                    height: 100%;
+                        a {
+                            
+                            color: #69f;
+                            font-size: 1.1em;
+                            text-decoration: none !important;
+                            
+                            &:active, &:focus, &:hover{
+                                color: #036;
+                            }
+                        }
+                }
+        }  
 }
+
 @media (max-width: 576px) {
     #primary-menu{
         flex-direction: column;

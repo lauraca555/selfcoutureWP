@@ -1,11 +1,11 @@
 <?php
 get_header();
 ?>
-	<aside id="secondary-1" >
+	<aside id="secondary-1" class="col-3">
 		<?php get_sidebar('sidebar');?>
     </aside> 
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area col-12 col-lg-6">
 		<main id="main" class="site-main">
 
 		<?php
@@ -26,7 +26,7 @@ get_header();
 	</div><!-- #primary -->
 
 
-<aside id="secondary-2" class="widget-container-right">        
+<aside id="secondary-2" class="widget-container-right col-3">        
          
 <?php  get_sidebar('sidebar-2'); 
 ?>

@@ -11,7 +11,7 @@
 
 ?>
     
-<div id="widget-container" class="widget-container-right"> 
+<div id="widget-container" class="widget-container-right d-flex flex-column"> 
         <?php  list_pdfs();
         //**active sidebar-2 if it'as active
         if (is_active_sidebar( 'sidebar-2' )){dynamic_sidebar( 'sidebar-2' );} ?><!--fin .decoration-widtget-area -->      

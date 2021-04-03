@@ -10,25 +10,24 @@
  */
 
 ?>
-	
-	</div><!-- #content -->
+			</div><!-- #content -->
 
-	<footer  class="site-footer">
-	
-        <div class="menu-footer-supercontainer">
-                    <?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-2',
-				'menu_id'        => 'footer-menu',
-			) );
-			?>
-                       
-                       
-        </div>
-	</footer>
-</div><!-- #page -->
+			<footer  class="site-footer">
+
+				<div class="menu-footer-supercontainer">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-2',
+						'menu_id'        => 'footer-menu',
+					) );
+					?>
+								
+								
+				</div>
+			</footer>
+		</div><?php #page ?>
 
 
-<?php wp_footer(); ?>
-</body>
+		<?php wp_footer(); ?>
+	</body>
 </html>

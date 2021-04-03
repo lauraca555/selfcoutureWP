@@ -21,11 +21,13 @@ get_sidebar('sidebar');
 ?>
     
 </aside>   
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div id="primary" class="content-area col-12 col-lg-7 d-flex  justify-content-center">
+		<main id="main" class="site-main d-flex flex-column" >
                    
-                    <section class="derniers-ateliers">
-                        <div class="maxi-tittre-atelier"><a href="https://www.self-couture.com/les-ateliers/"><h2>Les ateliers</h2></a></div>
+                    <section class="derniers-ateliers container fluid">
+                        <div class="maxi-titre-atelier mx-0 row">
+                                <a href="<?php echo home_url();?>/les-ateliers/">
+                                  <h2>Les ateliers</h2></a></div>
                         <?php  $argu = array ( 
                      'tax_query'=> array(
                                     array('taxonomy'=>'acces',
@@ -39,10 +41,11 @@ get_sidebar('sidebar');
                 $the_cours_query = new WP_Query($argu);
 // The Loop ateliers payant 
     if ( $the_cours_query->have_posts() ) {
+      ?><div class="row mt-3"><?php
 		while ( $the_cours_query->have_posts() ) :
 			$the_cours_query->the_post();
 
-                ?><div class="item-accueil"><div class="image-accueil-item"><div><a href="<?php the_permalink();?>"><?php
+                ?><div class="item-accueil col-4"><div class="image-accueil-item"><div><a href="<?php the_permalink();?>"><?php
                         
 			if (has_post_thumbnail()){
                             the_post_thumbnail('mitema-accueil-size');
@@ -54,6 +57,7 @@ get_sidebar('sidebar');
     }
      else {
      echo "pas de atelier payant encore";}
+     ?></div> <?php
      wp_reset_postdata();
                                    
                                
@@ -104,7 +108,7 @@ get_sidebar('sidebar');
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<aside id="secondary-2" class="widget-container-left">        
+<aside id="secondary-2" class="widget-container-left d-md-inline-block col-lg-3">        
          
 <?php get_sidebar('sidebar-2'); 
 //info_produit();

@@ -217,14 +217,13 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 
 function logo_selfcouture (){
-    
+    $logo= "/images/raw/logo-self-couture.png";        
     ?><a href="<?php echo get_home_url(); ?>"><?php
-   echo ("<img src='");
-   echo get_template_directory_uri();  
-   print ("/images/raw/logo-self-couture.png'>");
-   
-   ?></a><?php
+        echo ("<img src='".get_template_directory_uri().$logo."'>");   
+    ?></a><?php
 }
+
+
 /** 
  * Load photo paneau cours à gauche 
  */
@@ -694,8 +693,7 @@ foreach ( $term_children as $child ) {
                      'tax_query'=> array(
                                     array('taxonomy'=>'download_category',
                                           'field'=>'slug',
-                                          'terms'=> $cat_term,
-                                        
+                                          'terms'=> $cat_term,                                        
                                         )
                                         ),
                                         'posts_per_page' => '100',

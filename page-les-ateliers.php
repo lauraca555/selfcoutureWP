@@ -15,71 +15,69 @@
 get_header();
 
 ?>
-<aside id="secondary-1" >
-<div class="widget-container">
+<aside id="secondary-1" class="d-none d-lg-flex col-lg-3" >
     <div id="widget-zone" class="widget-area">
-    <div id="widget-container" class='widget-container-left'>            
-    <div class="decoration-widtget-area">    
-    <?php
-    //lescours payants
+        <div id="widget-container" class='widget-container-left'>            
+            <div class="decoration-widtget-area">    
+                <?php
+                //lescours payants
+                            
+                            $payant = array ( 
+                                'tax_query'=> array(array('taxonomy'=>'acces',
+                                                    'field'=>'slug',
+                                                    'terms'=>'ateliers-premium'
+                                                    )
+                                                    ),
+                                                    'posts_per_page' => '100',
+                                        );
+                            echo "<h2>Patrons de couture</h2>";
+                            // The Query
+                            $the_cours_query = new WP_Query($payant);
+                            // The Loop cours 
+                if ( $the_cours_query->have_posts() ) {?>
+                    <ul id="liste-ateliers-premium"><?php
+                    while ( $the_cours_query->have_posts() ) :
+                    $the_cours_query->the_post();
+                            ?><li><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></li><?php
+                    endwhile;?></ul><?php
+                }
+                    else {
+                echo "<p class=\"a-venir\">A venir</p>";}
+                    
+                            wp_reset_postdata(); 
+                            
+                            //lescours free 
+                            $argu = array ( 
+                                'tax_query'=> array(
+                                                array('taxonomy'=>'acces',
+                                                    'field'=>'slug',
+                                                    'terms'=>'atelier-libre'
+                                                    )
+                                                    ),
+                                                    'posts_per_page' => '100',
+                                        );
+                            echo "<h2>Tutos couture gratuits</h2>";
+                            // The Query
+                            $the_cours_query = new WP_Query($argu);
+            // The Loop cours free 
+                if ( $the_cours_query->have_posts() ) {
+                    
+                    ?><ul id="liste-ateliers-gratuits"><?php
+                    while ( $the_cours_query->have_posts() ) :
+                    $the_cours_query->the_post();
+                            ?><li><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></li><?php
+                    endwhile;
+                    ?></ul><?php
+                }
+                    
                 
-                 $payant = array ( 
-                     'tax_query'=> array(array('taxonomy'=>'acces',
-                                          'field'=>'slug',
-                                          'terms'=>'ateliers-premium'
-                                        )
-                                        ),
-                                        'posts_per_page' => '100',
-                               );
-                   echo "<h2>Patrons de couture</h2>";
-                // The Query
-                $the_cours_query = new WP_Query($payant);
-                // The Loop cours 
-    if ( $the_cours_query->have_posts() ) {?>
-        <ul id="liste-ateliers-premium"><?php
-    	while ( $the_cours_query->have_posts() ) :
-		$the_cours_query->the_post();
-                ?><li><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></li><?php
-        endwhile;?></ul><?php
-    }
-         else {
-     echo "<p class=\"a-venir\">A venir</p>";}
-        
-                 wp_reset_postdata(); 
-                 
-                //lescours free 
-                 $argu = array ( 
-                     'tax_query'=> array(
-                                    array('taxonomy'=>'acces',
-                                          'field'=>'slug',
-                                          'terms'=>'atelier-libre'
-                                        )
-                                        ),
-                                        'posts_per_page' => '100',
-                               );
-                   echo "<h2>Tutos couture gratuits</h2>";
-                // The Query
-                $the_cours_query = new WP_Query($argu);
-// The Loop cours free 
-    if ( $the_cours_query->have_posts() ) {
-        
-    	?><ul id="liste-ateliers-gratuits"><?php
-    	while ( $the_cours_query->have_posts() ) :
-		$the_cours_query->the_post();
-                ?><li><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></li><?php
-        endwhile;
-        ?></ul><?php
-    }
-        
-       
-         else {
-     echo "pas de cours gratuits encore";}
-        wp_reset_postdata();
-    ?>
-</div>
+                    else {
+                echo "pas de cours gratuits encore";}
+                    wp_reset_postdata();
+                ?>
+            </div>
         </div><!--fin .decoration-widtget-area -->
     </div>
- </div>
 </aside>    
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
